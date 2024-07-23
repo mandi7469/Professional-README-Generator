@@ -27,11 +27,6 @@ const questions = [
         name: 'usage',
       },
       {
-        type: 'input',
-        message: 'List your collaborators, if any, with links to their GitHub profiles.',
-        name: 'credits',
-      },
-      {
         type: 'list',
         message: 'Choose a license',
         name: 'license',
@@ -44,7 +39,7 @@ const questions = [
       },
       {
         type: 'input',
-        message: 'List your contribution guidlines',
+        message: 'List your contribution guidelines',
         name: 'contribution',
       },
       {
@@ -63,7 +58,6 @@ const questions = [
 inquirer
   .prompt(questions)
   .then((response) =>{
-    // console.log(response)
     let markDown = generateMarkdown(response)
     writeToFile('README.md', markDown)
   });
