@@ -21,7 +21,7 @@ On the project’s main page in GitHub, locate the “code” section and copy t
 
 You can utilize the inquirer-based application to generate a professional and informative README.md file quickly and efficiently.
 
-[Walkthrough video and link](https://watch.screencastify.com/v/8srw5HGgY8dKWYGmrazq)
+[Walkthrough video link](https://drive.google.com/file/d/1jEt74recfU3KHMRWiywh5kd4xWIzmTDj/view?usp=sharing)
     
 
 ## Badges
