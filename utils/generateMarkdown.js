@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'None') {
-    return `![GitHub License](https://img.shields.io/badge/license-${license.replace(' ', '_')}-blue.svg)`; 
+    return `![GitHub License](https://img.shields.io/badge/license-${license.replaceAll(' ', '_')}-blue.svg)`; 
   }
   return '';
 }
@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
-    return `\n* [License](#license)\n`;
+    return `[License](#license)`;
   }
   return '';
 }
@@ -32,6 +32,7 @@ This project is licensed under the ${license} license.`;
 function generateMarkdown(data) {
   console.log(data);
   return `# ${data.projectTitle}
+
   ${renderLicenseBadge(data.license)}
   
   ## Description
@@ -67,8 +68,6 @@ ${data.credits}
 
 ${renderLicenseSection(data.license)}
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
@@ -83,11 +82,17 @@ If your project has a lot of features, list them here.
 
 If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
+${data.contribution}
+
 ## Tests
 
 ${data.tests}
 
 ## Questions
+
+[Link to GitHub Profile](https://github.com/${data.username})
+
+If you have additional questions please email me at ${data.email}
 
 `;
 }

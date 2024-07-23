@@ -16,12 +16,6 @@ const questions = [
         message: 'Provide a short description explaining the what, why, and how of your project',
         name: 'description',
       },
-      // {
-      //   type: 'checkbox',
-      //   message: 'Select Table of Contents',
-      //   name: 'tableOfContents',
-      //   choices: ['Installation', 'Usage', 'Credits', 'License'],
-      // },
       {
         type: 'input',
         message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
@@ -41,7 +35,7 @@ const questions = [
         type: 'list',
         message: 'Choose a license',
         name: 'license',
-        choices: ['None', 'Apache License 2.0,', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense' ]
+        choices: ['None', 'Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense' ]
       },
       {
         type: 'input',
@@ -50,8 +44,18 @@ const questions = [
       },
       {
         type: 'input',
-        message: 'Questions?',
-        name: 'questions',
+        message: 'List your contribution guidlines',
+        name: 'contribution',
+      },
+      {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'username',
+      },
+      {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email',
       },
       
 ];
